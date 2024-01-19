@@ -1,0 +1,50 @@
+baseURL: https://blog.bdubois.io
+languageCode: en-gb
+title: Brieuc Dubois's blog
+theme: hugo-blog-awesome
+relativeURLs: true
+uglyURLs: true
+enableEmoji: true
+enabeRobotsTXT: true
+params:
+  socialIcons:
+    - name: gitea
+      url: https://git.bhasher.com
+    - name: github
+      url: https://github.com/BhasherBEL
+    - name: matrix
+      url: https://matrix.to/#/@bhasher:bhasher.com
+    - name: rss
+      url: feed.xml
+  sitename: Brieuc Dubois
+  defaultColor: dark
+  description:
+    Blog of Brieuc Dubois about computer science, software engineering,
+    linux, devops, web developpement, cybersecurity.
+  rssFeedDescription: full
+  author:
+    avatar: img/profile.webp
+    intro: Brieuc Dubois
+    name: Brieuc Dubois
+    description:
+      Computer scientist student from Belgium passionate by programming
+      and learning new things such as DevOps, Go, Svelte or network security.
+outputs:
+  home:
+    - HTML
+    - RSS
+markup:
+  highlight:
+    noClasses: false
+menu:
+  main:
+    - pageRef: /
+      name: Home
+      weight: 10
+    - pageRef: posts
+      name: Posts
+      weight: 20
+    - pageRef: about
+      name: About
+      weight: 30
+
