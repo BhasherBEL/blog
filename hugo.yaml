@@ -15,8 +15,9 @@ params:
     url: https://matrix.to/#/@bhasher:bhasher.com
   - name: github
     url: https://github.com/BhasherBEL
-  - name: rss
-    url: feed.xml
+  # TODO : Fix rss link
+  #- name: rss
+  #  url: feed.xml
   homeSubtitle: Student passionate about computer science, software engineering, free and open source, devops, web developpement, cybersecurity.
   enableGlobalLanguageMenu: true
 outputs:
