@@ -19,5 +19,6 @@ To make it easier for you to find posts that interest you, I'll use detailed tag
   - [docker](/tags/docker)
 - [travel](/tags/travel)
   - [solo-travelling](/tags/solo-travelling)
+- [meta](/tags/meta)
 
 This list will grow and change over time, and it's just a starting point. More specific tags will be included in each post.
