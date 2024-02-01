@@ -41,4 +41,4 @@ jobs:
 
       - name: Deploy
         run: |
-          curl -X POST https://portainer.bxl.bhasher.com/api/webhooks/33ee1445-1dba-4c3b-9384-0dc8f7e85369
+          curl -X POST https://portainer.bxl.bhasher.com/api/webhooks/27089ae3-59a8-46cd-9aab-1fb5f63c7d68
