@@ -5,8 +5,6 @@ RUN apk add --update hugo
 WORKDIR /opt/HugoApp
 
 COPY . .
-# Add analytics
-COPY layouts/partials/head.html themes/hugo-blog-awesome/layouts/partials/head.html
 
 RUN hugo
 
