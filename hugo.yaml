@@ -3,11 +3,12 @@ languageCode: en-gb
 title: Brieuc Dubois
 theme: hello-friend-ng
 relativeURLs: true
-uglyURLs: true
+#uglyURLs: true
 enableEmoji: true
 enabeRobotsTXT: true
 params:
   rssFullText: true
+  enableThemeToggle: true
   social:
   - name: gitea
     url: https://git.bhasher.com
@@ -19,7 +20,7 @@ params:
   #- name: rss
   #  url: feed.xml
   homeSubtitle: Student passionate about computer science, software engineering, free and open source, devops, web developpement, cybersecurity.
-  enableGlobalLanguageMenu: true
+  #enableGlobalLanguageMenu: true
 outputs:
   home:
   - html
@@ -41,5 +42,6 @@ menu:
   - pageRef: about
     name: About
     weight: 40
+
 taxonomies:
   tag: tags
