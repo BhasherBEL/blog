@@ -1,0 +1,60 @@
+title: "Bhasher's blog"
+baseURL: "https://blog.bhasher.com"
+
+languageCode: "en-us"
+defaultContentLanguage: "en-gb"
+
+enableEmoji: true
+ignoreErrors:
+  - "additional-script-loading-error"
+
+theme: "hugo-blog-awesome"
+
+menu:
+  main:
+    - name: "Home"
+      pageRef: "/"
+      url: "/"
+      weight: 10
+    - name: "Posts"
+      pageRef: "posts"
+      url: "/posts/"
+      weight: 20
+    #- name: "About"
+    #  pageRef: "about"
+    #  url: "/about/"
+    #  weight: 30
+
+params:
+  description: "My personal blog"
+  mainSections:
+    - "posts"
+  toc: false
+  tocOpen: false
+  goToTop: true
+  dateFormat: "2 January 2006"
+  rssFeedDescription: "full"
+
+  author:
+    intro: "Brieuc Dubois"
+    name: "Brieuc Dubois"
+    description: "I tinker with tech, explore open source, self-host what I can, care about privacy and sustainability and share my thoughts along the way."
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/bhasherbel"
+    - name: "matrix"
+      url: "https://matrix.to/#/@bhasher:bhasher.com"
+    - name: "email"
+      url: "mailto:contact@bhasher.com"
+    - name: "linkedin"
+      url: "https://linkedin.com/in/brieuc-dubois"
+    - name: "RSS"
+      url: "index.xml"
+
+  plausible:
+    enable: true
+    domain: "blog.bhasher.com"
+    selfhosted_domain: "plausible.bhasher.com"
+    outbound_link: true
+    gitstar: false
