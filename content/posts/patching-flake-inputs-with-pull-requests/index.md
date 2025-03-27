@@ -1,7 +1,7 @@
 +++
 date = '2025-03-26T16:47:29+01:00'
 draft = false
-title = 'Patching Nixpkgs With Pull Requests'
+title = 'Patching Nix Flake Inputs With Pull Requests'
 +++
 
 Updating my Nix channels is always a bit of a gamble. Sometimes, something breaks. Fortunately, because I'm on NixOS, this never results in a completely broken system; it just prevents an update. Still, it's an annoying inconvenience.
