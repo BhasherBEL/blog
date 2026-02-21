@@ -43,8 +43,8 @@ params:
   socialIcons:
     - name: "github"
       url: "https://github.com/bhasherbel"
-    - name: "matrix"
-      url: "https://matrix.to/#/@bhasher:bhasher.com"
+    # - name: "matrix"
+    #   url: "https://matrix.to/#/@bhasher:bhasher.com"
     - name: "email"
       url: "mailto:contact@bhasher.com"
     - name: "linkedin"
@@ -52,9 +52,9 @@ params:
     - name: "RSS"
       url: "index.xml"
 
-  plausible:
-    enable: true
-    domain: "blog.bhasher.com"
-    selfhosted_domain: "plausible.bhasher.com"
-    outbound_link: true
-    gitstar: false
+  # plausible:
+  #   enable: true
+  #   domain: "blog.bhasher.com"
+  #   selfhosted_domain: "plausible.bhasher.com"
+  #   outbound_link: true
+  #   gitstar: false
