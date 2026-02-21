@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "hugo-blog-awesome": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766670773,
+        "narHash": "sha256-ph/ECu7cRdRS5I4synQ/d8AWAeGBLGTHg1dmeZrqHLI=",
+        "owner": "hugo-sid",
+        "repo": "hugo-blog-awesome",
+        "rev": "b30bd3b2fd934ea9c94f74ab601389cbdff42e77",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hugo-sid",
+        "repo": "hugo-blog-awesome",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1771574726,
@@ -16,9 +32,27 @@
         "type": "github"
       }
     },
+    "plausible-hugo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1762485392,
+        "narHash": "sha256-crJXhyG6l+oNQMXCi7yDZC4tNPsDHa206FNPMODRV1g=",
+        "owner": "divinerites",
+        "repo": "plausible-hugo",
+        "rev": "fa11a0ff9da8c1685419dd28125d5a410c62373a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "divinerites",
+        "repo": "plausible-hugo",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "hugo-blog-awesome": "hugo-blog-awesome",
+        "nixpkgs": "nixpkgs",
+        "plausible-hugo": "plausible-hugo"
       }
     }
   },

@@ -3,11 +3,20 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
-    self.submodules = true;
+
+    hugo-blog-awesome = {
+      url = "github:hugo-sid/hugo-blog-awesome";
+      flake = false;
+    };
+
+    plausible-hugo = {
+      url = "github:divinerites/plausible-hugo";
+      flake = false;
+    };
   };
 
   outputs =
-    { self, nixpkgs }:
+    { self, ... }@inputs:
     let
       systems = [
         "x86_64-linux"
@@ -15,13 +24,13 @@
         "x86_64-darwin"
         "aarch64-darwin"
       ];
-      forAllSystems = f: nixpkgs.lib.genAttrs systems f;
+      forAllSystems = f: inputs.nixpkgs.lib.genAttrs systems f;
     in
     {
       packages = forAllSystems (
         system:
         let
-          pkgs = nixpkgs.legacyPackages.${system};
+          pkgs = inputs.nixpkgs.legacyPackages.${system};
         in
         {
           default = pkgs.stdenv.mkDerivation {
@@ -32,6 +41,9 @@
             nativeBuildInputs = [ pkgs.hugo ];
 
             buildPhase = ''
+              mkdir -p themes/hugo-blog-awesome themes/plausible-hugo
+              cp -r ${inputs.hugo-blog-awesome}/. themes/hugo-blog-awesome/
+              cp -r ${inputs.plausible-hugo}/. themes/plausible-hugo/
               hugo --minify --gc
             '';
 
@@ -45,7 +57,7 @@
       devShells = forAllSystems (
         system:
         let
-          pkgs = nixpkgs.legacyPackages.${system};
+          pkgs = inputs.nixpkgs.legacyPackages.${system};
         in
         {
           default = pkgs.mkShell {
